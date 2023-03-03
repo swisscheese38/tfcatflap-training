@@ -1,8 +1,7 @@
 # tfcatflap-training
-Work in progress
 
 ## Purpose
-In this repository the model for `https://github.com/swisscheese38/tfcatflap.git` is trained. The pictures have been taken by a Raspberry Pi camera that's mounted on a Sureflap Pet Door. At first the images where taken every time that the pet door itself was unlocked (using a micro switch attached to the locking mechanism). After having trained the model with roughly 50 images it was able to detect cat snouts and the locking/unlocking had been switched to be done by the Raspberry Pi and no longer the cat flap itself. Ever since the cat flap is taking more and more pictures so I'll be able to better train the model in the future.
+In this repository the model for [https://github.com/swisscheese38/tfcatflap](https://github.com/swisscheese38/tfcatflap) was trained. The pictures have been taken by a Raspberry Pi camera that's mounted on a Sureflap Pet Door. At first the images were taken every time that the pet door itself was unlocked (using a micro switch attached to the locking mechanism). After having trained the model with roughly 50 images it was able to detect cat snouts and the locking/unlocking had been switched to be done by the Raspberry Pi and no longer the cat flap itself. You can find this training data in the folders [train](train), [validate](validate) and [test](test). Every time the cat flap was unlocked for the next three months another picture was taken and the model had been trained again with about 500 pictures.
 
 ## Training the model
 Checkout the Jupyter notebook (using Colab) I used to create the model: [train.ipynb](train.ipynb)
